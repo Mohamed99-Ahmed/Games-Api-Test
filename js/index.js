@@ -62,7 +62,7 @@ async function displayGames(catag) {
 // looping in links and make if click in any link add active class to it and remove from other ,  call displayGames func with get value attribue to put in func
 links.forEach((li) => {
   li.addEventListener('click', (e) => {
-    li.classList.add('active-link');
+    e.target.classList.add('active-link');
     displayGames(e.target.getAttribute('value'));
 
     Array.from(links).map((li) => {
