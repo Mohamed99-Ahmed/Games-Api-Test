@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Search about your city weaher in arabic">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <!-- css files -->
+  <link rel="stylesheet" href="css/output.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- main file css -->
+  <link rel="stylesheet" href="css/output.css">
+  <title>Game App</title>
+</head>
+
+<body class="dark:bg-gray-800 bg-gray-300 dark:text-white  text-gray-900">
+
+  <div class="all overflow-hidden relative">
+    <!-- start games section   -->
+    <section class="games">
+      <img src="imgs/wraper.png" alt="wraper-bg" class="w-full h-[10vh] object-cover md:h-[20vh]">
+      <div class="container">
+        <nav class="flex items-center gap-2 sticky">
+          <div
+            class="nav  md:flex justify-between  items-center dark:bg-blue-500 bg-blue-400  p-3 w-[95%] border rounded-md md:rounded-full -mt-1 grow">
+            <div class="flex  justify-between items-center">
+              <div class="flex items-center gap-1">
+                <img src="imgs/logo-sm.png" class="w-20" alt="logo">
+                <p class="uppercase font-bold text-2xl ">game reviews</p>
+              </div>
+              <svg class="toggle md:hidden pointer-events-auto  w-8 h-8 cursor-pointer text-white text-3xl "
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+              </svg>
+
+            </div>
+            <!-- navbar of links -->
+            <div
+              class="links in-active  md:flex flex-col md:flex-row md:gap-3  divide-y md:divide-y-0 mt-3 md:mt-0 divide-gray-600">
+              <a class="uppercase py-3 cursor-pointer active-link duration-[1s] transition-all md:p-0 hover:text-blue-800"
+                value="mmorpg">mmorpg</a>
+              <a class="uppercase py-3 cursor-pointer duration-[1s] transition-all md:p-0 hover:text-blue-800"
+                value="shooter">shooter</a>
+              <a class="uppercase py-3 cursor-pointer duration-[1s] transition-all md:p-0 hover:text-blue-800"
+                value="sailing">sailing</a>
+              <a class="uppercase py-3 cursor-pointer duration-[1s] transition-all md:p-0 hover:text-blue-800"
+                value="permadeath">permadeath</a>
+              <a class="uppercase py-3 cursor-pointer duration-[1s] transition-all md:p-0 hover:text-blue-800"
+                value="superhero"> superhero</a>
+              <a class="uppercase py-3 cursor-pointer duration-[1s] transition-all md:p-0 hover:text-blue-800"
+                value="pixel">pixel</a>
+            </div>
+          </div>
+          <div class="mode  self-start md:mt-0 md:self-center ">
+            <i class="light fa-regular text-2xl fa-sun  mt-7 cursor-pointer text-gray-900 dark:text-white"></i>
+            <i class="dark  fa-regular text-2xl  cursor-pointer text-gray-900 dark:text-white"></i>
+          </div>
+        </nav>
+
+        <!-- category container -->
+        <main class="container my-20 ">
+          <div id="mmorpg" class=" grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-8">
+        
+          </div>
+          <div id="mmorpg" class=" grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-8">
+          </div>
+          <div id="shooter" class=" grid i grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-8">
+          </div>
+          <div id="sailing" class=" grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-8">
+          </div>
+          <div id="permadeath" class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-8"></div>
+          <div id="superhero" class=" grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-8"></div>
+          <div id="pixel" class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-8">
+          </div>
+        </main>
+      </div>
+    </section>
+    <!-- start details section   -->
+    <i class="cancel-details  absolute right-7 top-20  pointer-events-auto fa-solid fa-xmark font-bold  fa-2x cursor-pointer text-gray-500"></i>
+    <section id="details" class=" hidden w-screen py-20 order-5 dark:bg-inherit">
+      
+     </section>
+  </div>
+  <!-- main file -->
+  <script src="js/index.js" type="module"></script>
+</body>
+
+
+</html>
